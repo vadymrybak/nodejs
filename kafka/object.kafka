@@ -1,0 +1,16 @@
+PRODUCER non-keyed-json-message
+topic: test-topic
+{
+    "type": "my_test_event-haha-1-{{random.number}}"
+}
+
+###
+
+PRODUCER keyed-message
+topic: test-topic-keyed
+key: mykeyq
+key-format: string
+value-format: string
+12345
+
+###

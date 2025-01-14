@@ -1,0 +1,4 @@
+CONSUMER consumer-group-id
+topic: test-topic-keyed
+partitions: 0
+from: 0

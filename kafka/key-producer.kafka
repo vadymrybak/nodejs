@@ -1,0 +1,6 @@
+PRODUCER keyed-message
+topic: test-topic
+key: mykeyq
+key-format: string
+value-format: string
+123

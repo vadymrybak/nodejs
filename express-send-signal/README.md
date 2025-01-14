@@ -1,0 +1,1 @@
+can send signal to nodejs to get memory heapmap

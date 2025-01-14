@@ -1,0 +1,20 @@
+version: '3.6'
+
+
+services:
+  akhq:
+    # build:
+    #   context: .
+    image: tchiotludo/akhq
+    restart: unless-stopped
+    environment:
+      AKHQ_CONFIGURATION: |
+        akhq:
+          connections:
+            docker-kafka-server:
+              properties:
+                bootstrap.servers: "localhost:9092"
+
+    ports:
+      - 8080:8080
+
